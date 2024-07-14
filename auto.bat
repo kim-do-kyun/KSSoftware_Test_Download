@@ -10,3 +10,4 @@ sudo rm -rf app
 sudo git clone https://github.com/kim-do-kyun/KSSoftware_Test_Download.git app
 cd app
 sudo java -jar K*.jar
+pause
