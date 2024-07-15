@@ -1,9 +1,11 @@
-del /./KSSoftware_Test_Download/*.jar
-del /./KSSoftware_Test_Download/build
+cd C:\KSSoftware_Test_Download
+del *.jar
+
+echo "jar파일 삭제"
 
 cd c:/대학자료/KSSoftware
 call gradlew bootJar
-move build/libs/*.jar /./KSSoftware_Test_Download
+move build/libs/*.jar C:\KSSoftware_Test_Download
 
 cd src/front
 call npm run build
