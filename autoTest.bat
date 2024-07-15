@@ -1,3 +1,6 @@
+del /./KSSoftware_Test_Download/*.jar
+del /./KSSoftware_Test_Download/build
+
 cd c:/대학자료/KSSoftware
 call gradlew bootJar
 move build/libs/*.jar /./KSSoftware_Test_Download
