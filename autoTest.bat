@@ -7,10 +7,11 @@ cd c:/대학자료/KSSoftware
 call gradlew bootJar
 echo "그래들 빌드 완료"
 
-move build/libs/*.jar /./KSSoftware_Test_Download
+cd build/libs
+move *.jar /./KSSoftware_Test_Download
 echo "jar파일 이동 완료"
 
-cd src/front
+cd c:/대학자료/KSSoftware/src/front
 call npm run build
 echo "run build 완료"
 
