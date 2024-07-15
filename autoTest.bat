@@ -23,10 +23,9 @@ git add .
 git commit -m "Upload Build"
 git push
 
-ssh -i "C:\KSSoftware_Test_Download\KSSoftwareTest_Keypair.pem" ubuntu@ec2-52-64-204-202.ap-southeast-2.compute.amazonaws.com <<\EOF
+ssh -i "C:\KSSoftware_Test_Download\KSSoftwareTest_Keypair.pem" ubuntu@ec2-52-64-204-202.ap-southeast-2.compute.amazonaws.com
 
 bash ./auto.sh
 
-EOF
 
 pause
