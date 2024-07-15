@@ -1,13 +1,13 @@
 cd C:/KSSoftware_Test_Download
 del *.jar
-rmdir /S build
+rmdir /Q build
 echo "jar파일 삭제"
 
 cd c:/대학자료/KSSoftware
 call gradlew bootJar
 echo "그래들 빌드 완료"
 
-move build/libs/K*.jar C:/KSSoftware_Test_Download
+move build/libs/*.jar /./KSSoftware_Test_Download
 echo "jar파일 이동 완료"
 
 cd src/front
