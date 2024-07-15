@@ -23,4 +23,12 @@ git add .
 git commit -m "Upload Build"
 git push
 
-ssh -i "C:\KSSoftware_Test_Download\KSSoftwareTest_Keypair.pem" ubuntu@ec2-52-64-204-202.ap-southeast-2.compute.amazonaws.com
+ssh -i "C:\KSSoftware_Test_Download\KSSoftwareTest_Keypair.pem" ubuntu@ec2-52-64-204-202.ap-southeast-2.compute.amazonaws.com <<\EOF
+cd ~
+cd /usr/local
+sudo rm -rf app
+sudo git clone https://github.com/kim-do-kyun/KSSoftware_Test_Download.git app
+cd app
+sudo java -jar *.jar
+
+EOF
