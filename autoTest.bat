@@ -1,5 +1,6 @@
 cd C:/KSSoftware_Test_Download
 del *.jar
+rmdir /S build
 echo "jar파일 삭제"
 
 cd c:/대학자료/KSSoftware
